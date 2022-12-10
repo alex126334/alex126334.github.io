@@ -1,16 +1,16 @@
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   -webkit-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
 
 body {
 	background-color: #eee;
 }
 
-main{
+main {
 	background-color: white;
 	width: 90%;
 	max-width: 1000px;
@@ -20,20 +20,28 @@ main{
 	display: flex;
 	flex-wrap: wrap;
 }
+
 .img_link {
 	display: block;
 	width: calc(50% - 12px);
 	height: calc(90vh / 16*9);
-	max-width: 490px;
-	max-height: 500px;
+	/*max-width: 490px;
+	max-height: 500px;*/
 	margin: 6px;
+
+	transition-duration: 1s;
+	transition-timing-function: ease-in-out;
 }
-    
+
+.img_link:hover {
+	transform: scale(0.5) rotate(-15deg) translate(-200px, -100px);
+}
+
 .item {
 	height: 100%;
 	width: 100%;
 	/*Положение фона относительно блока: по центру*/
 	background-position: center;
-    /*Размер фона: равномерное масштабирование до заполнения*/
-    background-size: cover;
+	/*Размер фона: равномерное масштабирование до заполнения*/
+	background-size: cover;
 }
